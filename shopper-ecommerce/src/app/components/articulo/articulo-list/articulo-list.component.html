@@ -1,0 +1,9 @@
+<h1 align="center">Lista de artículos</h1>
+<section class="container-fluid d-flex">
+  <app-articulo-card
+    *ngFor="let articulo of articulos"
+    [articulo]="articulo"
+    [textoBoton]="'Ver detalles'"
+    (click)="navigateToArticulo($event)"
+  ></app-articulo-card>
+</section>

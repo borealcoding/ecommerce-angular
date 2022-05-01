@@ -1,0 +1,16 @@
+<section class="container text-center mt-5 mb-5">
+    <h1>Shop by Category</h1>
+    <article class="btn-group mt-3 mb-5" role="group" aria-label="Basic radio toggle button group">
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+        <label class="btn btn-outline-primary" for="btnradio1">Women</label>
+
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btnradio2">Men</label>
+
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btnradio3">Kids</label>
+    </article>
+    <section class="container d-flex justify-content-around">
+        <app-categorias-card *ngFor="let categoria of categorias" [categoria]="categoria"></app-categorias-card>
+    </section>
+</section>
