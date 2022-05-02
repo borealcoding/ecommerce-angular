@@ -1,5 +1,12 @@
 <h1>Información del artículo</h1>
-<p>Identificador del artículo: {{ articulo.id }}</p>
-<p>Nombre del artículo: {{ articulo.nombre }}</p>
-<p>Descripción del artículo: {{ articulo.descripcion }}</p>
-<p>Precio del artículo: {{ articulo.precio | Esp_currency }}</p>
+<section class="flex-container">
+  <article class="flex-item">
+    <img id="imgPrincipal" [src]="articulo.imagen" />
+  </article>
+  <article class="flex-item">
+    <p id="nombreArticulo">{{ articulo.nombre }}</p>
+    <p id="precioArticulo">{{ articulo.precio | Esp_currency }}</p>
+    <p>Color: <strong>Multicolor</strong></p>
+    <img id="imgMiniatura" [src]="articulo.imagen" /><br />
+  </article>
+</section>

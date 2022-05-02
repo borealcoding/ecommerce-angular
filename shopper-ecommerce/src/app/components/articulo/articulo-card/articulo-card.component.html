@@ -1,4 +1,4 @@
-<div class="flex-item card" style="width: 18rem; margin: 1em" *ngIf="articulo">
+<section class="flex-item card" style="width: 18rem; margin: 1em" *ngIf="articulo">
   <a (click)="clickBoton()">
     <img
       [src]="articulo.imagen"
@@ -10,4 +10,4 @@
       <p class="card-text">{{ articulo.precio | Esp_currency }}</p>
     </div>
   </a>
-</div>
+</section>
