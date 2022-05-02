@@ -1,0 +1,10 @@
+.flex-item {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+  text-align: center;
+}
+
+.flex-item:hover {
+    cursor: pointer;
+}

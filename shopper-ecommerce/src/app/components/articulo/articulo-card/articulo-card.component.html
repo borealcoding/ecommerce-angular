@@ -1,12 +1,13 @@
-<div class="card" style="width: 18rem; margin: 1em" *ngIf="articulo">
-  <img
-    [src]="articulo.imagen"
-    class="card-img-top"
-    alt="Imagen de zapatilla {{ articulo.nombre }}"
-  />
-  <div class="card-body">
-    <h5 class="card-title">{{ articulo.nombre }}</h5>
-    <p class="card-text">{{ articulo.nombre + "€" }}</p>
-    <a class="btn btn-primary" (click)="clickBoton()">{{ textoBoton }}</a>
-  </div>
+<div class="flex-item card" style="width: 18rem; margin: 1em" *ngIf="articulo">
+  <a (click)="clickBoton()">
+    <img
+      [src]="articulo.imagen"
+      class="card-img-top"
+      alt="Imagen de zapatilla {{ articulo.nombre }}"
+    />
+    <div class="card-body">
+      <h5 class="card-title">{{ articulo.nombre }}</h5>
+      <p class="card-text">{{ articulo.precio | Esp_currency }}</p>
+    </div>
+  </a>
 </div>

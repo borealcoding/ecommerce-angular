@@ -4,7 +4,6 @@ import { TiendaComponent } from './components/tienda/tienda/tienda.component';
 import { NosotrosComponent } from './components/nosotros/nosotros/nosotros.component';
 import { ArticuloListComponent } from './components/articulo/articulo-list/articulo-list.component';
 import { ArticuloFormComponent } from './components/articulo/articulo-form/articulo-form.component';
-import { PipesComponent } from './pipes/pipes.component';
 
 
 const routes: Routes = [
@@ -12,7 +11,6 @@ const routes: Routes = [
   { path: 'nosotros', component: NosotrosComponent },
   { path: 'articulos', component: ArticuloListComponent},
   { path: 'articulo-ficha/:idArticulo', component: ArticuloFormComponent},
-  { path: 'pipes', component: PipesComponent},
 ];
 
 @NgModule({

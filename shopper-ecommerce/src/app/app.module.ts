@@ -8,14 +8,17 @@ import { NosotrosComponent } from './components/nosotros/nosotros/nosotros.compo
 import { ArticuloListComponent } from './components/articulo/articulo-list/articulo-list.component';
 import { ArticuloFormComponent } from './components/articulo/articulo-form/articulo-form.component';
 import { BannerComponent } from './components/banner/banner/banner.component';
-import { PipesComponent } from './pipes/pipes.component';
-import { InversorNombrePipe } from './shared/inversor-nombre.pipe';
 import { ArticuloCardComponent } from './components/articulo/articulo-card/articulo-card.component';
 import { HttpClientModule } from '@angular/common/http';
 import { BannerCardComponent } from './components/banner/banner-card/banner-card.component';
 import { CategoriasComponent } from './components/categorias/categorias/categorias.component';
 import { CategoriasCardComponent } from './components/categorias/categorias-card/categorias-card.component';
 import { CarrouselComponent } from './components/carrousel/carrousel/carrousel.component';
+import { CurrencyPipe } from './shared/pipes/currency-pipe.pipe';
+
+import { registerLocaleData } from '@angular/common';
+import localeEs from '@angular/common/locales/es';
+registerLocaleData(localeEs, 'es');
 
 @NgModule({
   declarations: [
@@ -26,13 +29,12 @@ import { CarrouselComponent } from './components/carrousel/carrousel/carrousel.c
     ArticuloListComponent,
     ArticuloFormComponent,
     BannerComponent,
-    PipesComponent,
-    InversorNombrePipe,
     ArticuloCardComponent,
     BannerCardComponent,
     CategoriasComponent,
     CategoriasCardComponent,
     CarrouselComponent,
+    CurrencyPipe,
   ],
   imports: [
     BrowserModule,

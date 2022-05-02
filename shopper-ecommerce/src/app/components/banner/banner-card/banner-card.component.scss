@@ -1,0 +1,12 @@
+.flex-item {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+  text-align: center;
+  width: 18rem;
+  margin-top: 1em;
+}
+
+.flex-item:hover {
+  cursor: pointer;
+}
