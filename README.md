@@ -3,26 +3,23 @@
 [![forthebadge](/img/made-with-angular.svg)](https://forthebadge.com)
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!--  generated with [DocToc](https://github.com/thlorenz/doctoc) -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 ## Index
 
-- [Shopper - ecommerce](#shopper---ecommerce)
-  - [Descripción](#descripci%C3%B3n)
-  - [Instalación](#instalaci%C3%B3n)
-  - [Funcionamiento](#funcionamiento)
-    - [Tienda](#tienda)
-    - [Nosotros](#nosotros)
-    - [Lista de artículos](#lista-de-art%C3%ADculos)
-    - [Información del artículo](#informaci%C3%B3n-del-art%C3%ADculo)
-  - [Observaciones](#observaciones)
-    - [Tienda](#tienda-1)
-    - [Lista de artículos](#lista-de-art%C3%ADculos-1)
-    - [Información del artículo](#informaci%C3%B3n-del-art%C3%ADculo-1)
-  - [Estructura de los directorios](#estructura-de-los-directorios)
-    - [Directorio raíz](#directorio-ra%C3%ADz)
-    - [Directorio app/](#directorio-app)
-    - [Observaciones](#observaciones-1)
+- [Descripción](#descripci%C3%B3n)
+- [Instalación](#instalaci%C3%B3n)
+- [Funcionamiento](#funcionamiento)
+  - [Tienda](#tienda)
+  - [Nosotros](#nosotros)
+  - [Lista de artículos](#lista-de-art%C3%ADculos)
+  - [Información del artículo](#informaci%C3%B3n-del-art%C3%ADculo)
+- [Observaciones](#observaciones)
+  - [Tienda](#tienda-1)
+  - [Lista de artículos](#lista-de-art%C3%ADculos-1)
+  - [Información del artículo](#informaci%C3%B3n-del-art%C3%ADculo-1)
+- [Estructura de los directorios](#estructura-de-los-directorios)
+  - [Directorio raíz](#directorio-ra%C3%ADz)
+  - [Directorio app/](#directorio-app)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -99,20 +96,23 @@ Los siguientes elementos son cargados desde el backend haciendo uso de Mockoon, 
 
 ## Estructura de los directorios
 
+Se han separado los ficheros en distintos directorios, para facilitar su gestión y mantenimiento.
+
 ### Directorio raíz
 
 ![root-dir](/img/estructura-principal.png)
+
+    - app/: Contiene la aplicación Angular
+    - assets/: Ficheros multimedia estáticos de uso general
+    - enviroments/: Ficheros de configuración de los entornos. Aquí también se guarda el json de configuración del Mockoon
 
 ### Directorio app/
 
 ![app-dir](/img/estructura-app.png)
 
-### Observaciones
-
-Se han separado los ficheros según su tipo para aportar claridad. Podemos encontrar:
-
+    - components/: Componentes de la aplicación
+    - services/: Servicios de la aplicación
+    - shared/: Componentes compartidos entre los componentes de la aplicación
+      - shared/pipes/: Aquí se encuentra el pipe encargado de realizar la conversión de divisas.
+    - app-routing.module.ts: Fichero de configuración de los enrutamientos.
     - app.module.ts: Fichero principal de la aplicación, donde se encuentran los imports de los componentes, servicios, pipes y rutas
-    - app.routing.module.ts: Fichero que contiene las rutas de la aplicación
-    - components/: Contiene los componentes de la aplicación
-    - services/: Contiene los servicios de la aplicación
-    - shared/pipes/: Contiene los pipes de la aplicación
